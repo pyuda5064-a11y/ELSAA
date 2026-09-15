@@ -1,22 +1,58 @@
-function toggleMenu() {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const nav = document.querySelector("nav");
+    // Animasi sederhana saat halaman dibuka
 
-    nav.classList.toggle("show");
-
-}
+    document.body.classList.add("loaded");
 
 
-const links = document.querySelectorAll("nav a");
+    // Efek mouse pada kartu
 
-links.forEach(link => {
+    const cards =
+        document.querySelectorAll(".glass-box");
 
-    link.addEventListener("click", () => {
 
-        const nav = document.querySelector("nav");
+    cards.forEach(card => {
 
-        nav.classList.remove("show");
+        card.addEventListener(
+            "mousemove",
+            e => {
+
+                const rect =
+                    card.getBoundingClientRect();
+
+                const x =
+                    e.clientX - rect.left;
+
+                const y =
+                    e.clientY - rect.top;
+
+                const rotateX =
+                    ((y / rect.height) - 0.5) * -3;
+
+                const rotateY =
+                    ((x / rect.width) - 0.5) * 3;
+
+                card.style.transform =
+                    `perspective(700px)
+                     rotateX(${rotateX}deg)
+                     rotateY(${rotateY}deg)
+                     translateY(-5px)`;
+
+            }
+        );
+
+
+        card.addEventListener(
+            "mouseleave",
+            () => {
+
+                card.style.transform =
+                    "";
+
+            }
+        );
 
     });
+
 
 });
