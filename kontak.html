@@ -1,156 +1,197 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <title>Kontak — Desa Sepadu</title>
 
-<title>Kontak — Dusun Permai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-
 <body>
 
-<header>
-
-<div class="logo">
-DUSUN<span>PERMAI</span>
-</div>
+<div class="stars"></div>
 
 
-<nav>
+<header class="navbar">
 
-<a href="index.html">
-Beranda
-</a>
+    <div class="logo">
 
-<a href="tentang.html">
-Tentang
-</a>
+        <span>DS</span>
 
-<a href="galeri.html">
-Galeri
-</a>
+        <div>
+            <strong>DESA SEPADU</strong>
+            <small>DUSUN PERMAI</small>
+        </div>
 
-<a href="lokasi.html">
-Lokasi
-</a>
-
-<a href="kontak.html"
-   class="active">
-Kontak
-</a>
-
-</nav>
+    </div>
 
 
-<button class="menu-btn"
-        onclick="toggleMenu()">
-☰
-</button>
+    <nav>
+
+        <a href="index.html">
+            Beranda
+        </a>
+
+        <a href="tentang.html">
+            Tentang
+        </a>
+
+        <a href="galeri.html">
+            Galeri
+        </a>
+
+        <a href="lokasi.html">
+            Lokasi
+        </a>
+
+        <a href="kontak.html" class="active">
+            Kontak
+        </a>
+
+    </nav>
 
 </header>
 
 
-<main>
-
-<section class="contact">
-
-<div class="contact-left">
-
-<p class="small-title">
-TERHUBUNG DENGAN KAMI
-</p>
-
-<h1>
-Salam dari<br>
-<span>Dusun Permai.</span>
-</h1>
-
-<p>
-Ada cerita, informasi, atau sesuatu yang ingin
-dibagikan tentang Dusun Permai?
-Silakan hubungi kami.
-</p>
-
-</div>
+<section class="page contact-page">
 
 
-<div class="contact-card">
+    <div class="page-title">
 
-<div class="contact-line">
+        <p class="eyebrow">
+            GET IN TOUCH
+        </p>
 
-<span>LOKASI</span>
+        <h1>
+            Hubungi
+            <span>Kami</span>
+        </h1>
 
-<strong>
-Desa Sepadu,
-Semparuk,
-Sambas
-</strong>
+        <p>
+            Informasi kontak dapat kamu ubah sesuai
+            nomor WhatsApp dan media sosial kamu.
+        </p>
 
-</div>
-
-
-<div class="contact-line">
-
-<span>PROVINSI</span>
-
-<strong>
-Kalimantan Barat
-</strong>
-
-</div>
+    </div>
 
 
-<div class="contact-line">
-
-<span>INDONESIA</span>
-
-<strong>
-🇮🇩
-</strong>
-
-</div>
+    <div class="contact-grid">
 
 
-<a href="lokasi.html"
-   class="btn primary">
+        <div class="glass-box contact-card">
 
-Lihat Lokasi →
+            <div class="contact-icon">
+                📍
+            </div>
 
-</a>
+            <h2>
+                Alamat
+            </h2>
 
-</div>
+            <p>
+                Dusun Permai,<br>
+                Desa Sepadu,<br>
+                Kecamatan Semparuk,<br>
+                Kabupaten Sambas,<br>
+                Kalimantan Barat.
+            </p>
+
+        </div>
+
+
+        <div class="glass-box contact-card">
+
+            <div class="contact-icon">
+                💬
+            </div>
+
+            <h2>
+                WhatsApp
+            </h2>
+
+            <p>
+                Tambahkan nomor WhatsApp
+                kamu di sini.
+            </p>
+
+            <!-- GANTI NOMOR DI BAWAH -->
+            <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="btn primary full">
+
+                Chat WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <div class="glass-box contact-card">
+
+            <div class="contact-icon">
+                📷
+            </div>
+
+            <h2>
+                Instagram
+            </h2>
+
+            <p>
+                Tambahkan akun Instagram
+                kamu di sini.
+            </p>
+
+            <a
+                href="#"
+                class="btn secondary full">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="contact-bottom">
+
+        <h2>
+            “Dari Dusun Permai,
+            untuk dikenang.”
+        </h2>
+
+        <a
+            href="lokasi.html"
+            class="btn primary">
+
+            📍 Lihat Lokasi
+
+        </a>
+
+    </div>
+
 
 </section>
 
 
-<section class="quote">
-
-<p>“</p>
-
-<h2>
-Sederhana tempatnya,
-berarti ceritanya.
-</h2>
-
-<span>
-Dusun Permai · Desa Sepadu
-</span>
-
-</section>
-
-</main>
+<footer>
+    <p>© 2026 Desa Sepadu • Dusun Permai</p>
+</footer>
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
