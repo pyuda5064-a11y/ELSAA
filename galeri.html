@@ -3,29 +3,47 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Galeri — Desa Sepadu</title>
 
-    <title>Galeri — Dusun Permai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<header>
+<div class="stars"></div>
+
+
+<header class="navbar">
 
     <div class="logo">
-        DUSUN<span>PERMAI</span>
+
+        <span>DS</span>
+
+        <div>
+            <strong>DESA SEPADU</strong>
+            <small>DUSUN PERMAI</small>
+        </div>
+
     </div>
+
 
     <nav>
 
-        <a href="index.html">Beranda</a>
+        <a href="index.html">
+            Beranda
+        </a>
 
-        <a href="tentang.html">Tentang</a>
+        <a href="tentang.html">
+            Tentang
+        </a>
 
         <a href="galeri.html" class="active">
             Galeri
@@ -41,105 +59,96 @@
 
     </nav>
 
-    <button class="menu-btn"
-            onclick="toggleMenu()">
-        ☰
-    </button>
-
 </header>
 
 
-<main>
+<section class="page">
 
-<section class="page-header">
+    <div class="page-title">
 
-    <p class="small-title">
-        POTRET KEHIDUPAN
-    </p>
+        <p class="eyebrow">
+            VISUAL STORY
+        </p>
 
-    <h1>
-        Galeri <span>Dusun</span>
-    </h1>
+        <h1>
+            Galeri
+            <span>Dusun Permai</span>
+        </h1>
 
-    <p>
-        Kumpulan momen dan suasana dari
-        Dusun Permai, Desa Sepadu.
-    </p>
-
-</section>
-
-
-<section class="gallery">
-
-    <div class="gallery-item big">
-
-        <img
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80">
-
-        <div class="caption">
-            <span>01</span>
-            Suasana Desa
-        </div>
+        <p>
+            Tempatkan foto-foto Desa Sepadu dan Dusun Permai
+            milik kamu di halaman ini.
+        </p>
 
     </div>
 
 
-    <div class="gallery-item">
+    <div class="gallery">
 
-        <img
-        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80">
+        <div class="gallery-item large">
 
-        <div class="caption">
-            <span>02</span>
-            Alam & Kehidupan
+            <div class="gallery-placeholder">
+                <span>🌿</span>
+                <h2>Suasana Desa</h2>
+                <p>Dusun Permai</p>
+            </div>
+
         </div>
 
-    </div>
 
+        <div class="gallery-item">
 
-    <div class="gallery-item">
+            <div class="gallery-placeholder blue">
+                <span>🌅</span>
+                <h2>Senja</h2>
+                <p>Desa Sepadu</p>
+            </div>
 
-        <img
-        src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&q=80">
-
-        <div class="caption">
-            <span>03</span>
-            Lingkungan
         </div>
 
-    </div>
 
+        <div class="gallery-item">
 
-    <div class="gallery-item">
+            <div class="gallery-placeholder green">
+                <span>🌾</span>
+                <h2>Lingkungan</h2>
+                <p>Kalimantan Barat</p>
+            </div>
 
-        <img
-        src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=900&q=80">
-
-        <div class="caption">
-            <span>04</span>
-            Kehijauan
         </div>
 
-    </div>
+
+        <div class="gallery-item">
+
+            <div class="gallery-placeholder purple">
+                <span>🏡</span>
+                <h2>Rumah & Kampung</h2>
+                <p>Dusun Permai</p>
+            </div>
+
+        </div>
 
 
-    <div class="gallery-item">
+        <div class="gallery-item large">
 
-        <img
-        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80">
+            <div class="gallery-placeholder orange">
+                <span>☀️</span>
+                <h2>Hari yang Cerah</h2>
+                <p>Sepadu, Semparuk</p>
+            </div>
 
-        <div class="caption">
-            <span>05</span>
-            Ketenteraman
         </div>
 
     </div>
 
 </section>
 
-</main>
 
-<script src="script.js"></script>
+<footer>
+    <p>© 2026 Desa Sepadu • Dusun Permai</p>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
