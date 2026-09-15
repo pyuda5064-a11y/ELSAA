@@ -1,142 +1,165 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <title>Lokasi — Desa Sepadu</title>
 
-<title>Lokasi — Dusun Permai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-
 <body>
 
-<header>
+<div class="stars"></div>
 
-<div class="logo">
-DUSUN<span>PERMAI</span>
-</div>
 
-<nav>
+<header class="navbar">
 
-<a href="index.html">
-Beranda
-</a>
+    <div class="logo">
 
-<a href="tentang.html">
-Tentang
-</a>
+        <span>DS</span>
 
-<a href="galeri.html">
-Galeri
-</a>
+        <div>
+            <strong>DESA SEPADU</strong>
+            <small>DUSUN PERMAI</small>
+        </div>
 
-<a href="lokasi.html"
-   class="active">
-Lokasi
-</a>
+    </div>
 
-<a href="kontak.html">
-Kontak
-</a>
 
-</nav>
+    <nav>
 
-<button class="menu-btn"
-        onclick="toggleMenu()">
-☰
-</button>
+        <a href="index.html">
+            Beranda
+        </a>
+
+        <a href="tentang.html">
+            Tentang
+        </a>
+
+        <a href="galeri.html">
+            Galeri
+        </a>
+
+        <a href="lokasi.html" class="active">
+            Lokasi
+        </a>
+
+        <a href="kontak.html">
+            Kontak
+        </a>
+
+    </nav>
 
 </header>
 
 
-<main>
+<section class="page">
 
-<section class="page-header">
+    <div class="page-title">
 
-<p class="small-title">
-TEMUKAN KAMI
-</p>
+        <p class="eyebrow">
+            FIND THE PLACE
+        </p>
 
-<h1>
-Lokasi <span>Dusun Permai</span>
-</h1>
+        <h1>
+            Lokasi
+            <span>Dusun Permai</span>
+        </h1>
 
-<p>
-Temukan lokasi Dusun Permai melalui
-peta dan petunjuk arah.
-</p>
+        <p>
+            Temukan lokasi Desa Sepadu melalui Google Maps.
+        </p>
+
+    </div>
+
+
+    <div class="location-layout">
+
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps?q=Dusun+Permai,+Desa+Sepadu,+Semparuk,+Sambas,+Kalimantan+Barat&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+        <div class="location-info">
+
+            <div class="glass-box">
+
+                <span class="location-symbol">
+                    📍
+                </span>
+
+                <h2>
+                    Alamat
+                </h2>
+
+                <p>
+                    Dusun Permai
+                    <br>
+                    Desa Sepadu
+                    <br>
+                    Kecamatan Semparuk
+                    <br>
+                    Kabupaten Sambas
+                    <br>
+                    Kalimantan Barat
+                </p>
+
+
+                <a
+                    class="btn primary full"
+                    target="_blank"
+                    href="https://www.google.com/maps/search/?api=1&query=Dusun+Permai,+Desa+Sepadu,+Semparuk,+Sambas,+Kalimantan+Barat">
+
+                    Buka Google Maps
+
+                </a>
+
+            </div>
+
+
+            <div class="coordinates">
+
+                <span>AREA</span>
+
+                <strong>
+                    Desa Sepadu
+                </strong>
+
+                <small>
+                    Kecamatan Semparuk
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<section class="location">
-
-<div class="location-info">
-
-<p class="small-title">
-ALAMAT
-</p>
-
-<h2>
-Dusun Permai
-</h2>
-
-<p>
-Desa Sepadu<br>
-Kecamatan Semparuk<br>
-Kabupaten Sambas<br>
-Kalimantan Barat<br>
-Indonesia
-</p>
-
-<div class="plus-code">
-
-<span>PLUS CODE</span>
-
-<strong>
-439J+4XC
-</strong>
-
-</div>
+<footer>
+    <p>© 2026 Desa Sepadu • Dusun Permai</p>
+</footer>
 
 
-<a
-class="btn primary"
-target="_blank"
-href="https://www.google.com/maps/search/?api=1&query=Dusun+Permai%2C+Sepadu%2C+Semparuk%2C+Kabupaten+Sambas%2C+Kalimantan+Barat">
-
-Buka di Google Maps →
-
-</a>
-
-</div>
-
-
-<div class="map-box">
-
-<iframe
-src="https://www.google.com/maps?q=Dusun%20Permai%2C%20Sepadu%2C%20Semparuk%2C%20Kabupaten%20Sambas%2C%20Kalimantan%20Barat&output=embed"
-width="100%"
-height="100%"
-style="border:0;"
-loading="lazy">
-</iframe>
-
-</div>
-
-</section>
-
-</main>
-
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
