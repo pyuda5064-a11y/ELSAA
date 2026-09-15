@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusun Permai — Desa Sepadu</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Desa Sepadu — Dusun Permai</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">DUSUN<span>PERMAI</span></div>
+<div class="stars"></div>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>DS</span>
+        <div>
+            <strong>DESA SEPADU</strong>
+            <small>DUSUN PERMAI</small>
+        </div>
+    </div>
 
     <nav>
         <a href="index.html" class="active">Beranda</a>
@@ -20,63 +36,68 @@
         <a href="kontak.html">Kontak</a>
     </nav>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
-<main>
 
-<section class="hero">
+<main class="hero">
 
     <div class="hero-content">
 
-        <p class="small-title">SELAMAT DATANG DI</p>
+        <p class="eyebrow">WELCOME TO MY WEBSITE</p>
 
         <h1>
-            Dusun<br>
-            <span>Permai</span>
+            Desa Sepadu
+            <span>Dusun Permai</span>
         </h1>
 
         <p class="description">
-            Sebuah sudut sederhana di Desa Sepadu,
-            tempat kehidupan tumbuh bersama,
-            tradisi tetap terjaga, dan kebersamaan
-            menjadi bagian dari keseharian.
+            Sebuah halaman sederhana untuk mengenalkan tempat,
+            suasana, dan cerita dari Dusun Permai, Desa Sepadu.
         </p>
 
         <div class="buttons">
-            <a href="tentang.html" class="btn primary">
-                Jelajahi
+
+            <a href="lokasi.html" class="btn primary">
+                📍 Lihat Lokasi
             </a>
 
-            <a href="lokasi.html" class="btn secondary">
-                Lihat Lokasi
+            <a href="tentang.html" class="btn secondary">
+                ✨ Jelajahi
             </a>
+
         </div>
 
     </div>
 
-    <div class="hero-decoration">
-        <div class="circle"></div>
-        <div class="leaf">✦</div>
+
+    <div class="hero-card">
+
+        <div class="card-glow"></div>
+
+        <div class="location-icon">
+            📍
+        </div>
+
+        <p>Alamat</p>
+
+        <h2>Dusun Permai</h2>
+
+        <span>
+            Desa Sepadu, Kecamatan Semparuk<br>
+            Kabupaten Sambas, Kalimantan Barat
+        </span>
+
     </div>
-
-</section>
-
-<section class="quote">
-
-    <p>“</p>
-
-    <h2>
-        Dari tempat yang sederhana,
-        tumbuh cerita yang luar biasa.
-    </h2>
-
-    <span>— Dusun Permai, Desa Sepadu</span>
-
-</section>
 
 </main>
 
-<script src="script.js"></script>
+
+<footer>
+    <p>© 2026 Desa Sepadu • Dusun Permai</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
